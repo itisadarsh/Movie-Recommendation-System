@@ -34,3 +34,30 @@ new autoComplete({
         document.getElementById('autoComplete').value = feedback.selection.value;
     }
 });
+
+// $(document).ready(function(){
+//     // Assume predictLetter() is called after receiving the response from your LSTM model
+//     function predictLetter() {
+//         $.ajax({
+//             type: 'POST',
+//             url: '/predictletter',
+//             contentType: 'application/json',
+//             data: JSON.stringify({
+         
+//             }),
+//             success: function(response) {
+             
+//                 console.log(response.predicted_movie)
+//                 console.log("hi")
+//                 var predictedMovie = response.predicted_movie;
+
+//                 $('#autoComplete').val(predictedMovie);
+
+//             },
+//             error: function(error) {
+//                 console.error('Error:', error);
+//             }
+//         });
+//     }
+//     predictLetter();
+// });
